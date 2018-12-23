@@ -1,0 +1,215 @@
+/* Global**/
+body{
+  --corEscura: #323233;
+  --corClara: #e9683e;  /***/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin:0;
+  background-color: #f4f4f4;
+}
+
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.button{
+  background-color: var(--corClara);
+  color: #ffffff;
+  border:0px;
+  padding-left: 20px;
+  padding-right:20px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.escuro{
+  padding: 30px;
+  background: var(--corEscura);
+  color: #ffffff;
+  margin-top: 10px;
+}
+/* Header**/
+
+header{
+  background: var(--corEscura);
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: var(--corClara) 3px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #marca{
+  float: left;
+}
+
+header #marca h1{
+  margin:0px;
+}
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .Sublinhar, .atual a{
+  color: var(--corClara);
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/*Showcase**/
+
+#showcase{
+  min-height: 400px;
+  background: url('../img/header.jpg') no-repeat;
+  background-size: cover;
+  background-position: 90% 90%;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase h1{
+  margin-top: 170px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+/* Newsletter **/
+
+#newsletter{
+  padding: 10px;
+  background: var(--corEscura);
+  color: #ffffff;
+}
+
+#newsletter h1{
+  text-align: center;
+}
+#newsletter form{
+  margin-top: 20px;
+  text-align: center;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:40px;
+  width:50%;
+  font-size: 20px;
+}
+
+/* Sessoes **/
+
+#sessao1{
+  margin-top: 20px;
+}
+
+#sessao1 .item{
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#sessao1 .item img{
+  width: 90px;
+}
+
+/** Aside **/
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .comentario input, aside#sidebar .comentario textarea{
+  padding: 10px;
+  width: 100%;
+  margin-bottom:5px;
+}
+
+/* Artigo**/
+article.art1{
+  float: left;
+  width: 65%;
+}
+
+/*Servicoes**/
+
+ul#servicos li{
+  list-style: none;
+  padding: 20px;
+  background: #e6e6e6;
+  margin-bottom: 5px;
+  border: #cccccc solid 1px;
+}
+
+footer{
+  padding: 10px;
+  margin-top: 10px;
+  background: var(--corClara);
+  color: #ffffff;
+  text-align: center;
+}
+
+/*Media queries**/
+
+@media(max-width: 768px) {
+  header #marca,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #sessao1 .Item,
+  article.art1,
+  aside#sidebar {
+    float:none;
+    width:100%;
+    text-align:center;
+
+  }
+
+  #newsletter form input{
+    display: block;
+  }
+
+  #newsletter form button, .comentario button{
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"]{
+    width: 100%;
+  }
+
+
+}

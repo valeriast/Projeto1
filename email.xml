@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<emails>
+
+  <email id="1">
+    <endereco>teste@email.com</endereco>
+    <nome>teste</nome>
+    <sobrenome>dos testes</sobrenome>
+  </email>
+
+  <email id="2">
+    <endereco>teste@email.com</endereco>
+    <nome>teste</nome>
+    <sobrenome>dos testes</sobrenome>
+  </email>
+
+</emails>

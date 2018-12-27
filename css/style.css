@@ -118,6 +118,18 @@ header a:hover{
   margin: 0;
 }
 
+#newsletter form{
+  margin-top: 20px;
+  text-align: center;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:40px;
+  width:50%;
+  font-size: 20px;
+  margin: 0;
+}
 /* Sessoes **/
 
 #sessao1{

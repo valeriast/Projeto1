@@ -1,24 +1,11 @@
 <?php
 
-class Email
-{
+  $email = $_POST["email"] ;
 
-  //Modelo, ajustar posteriormente
+  echo $email;
+  $xml = '<email>' . $email . '</email>';
 
-  POST_email = 'email';
-  publlic $email;
-
-  public function post(){
-    $email=email;
-  }
-
-  public function get(){
-    echo($email);
-  }
-
-  public function gravaEmail(email, ){
-    //gravar em xml
-  }
-}
-
+  $fp = fopen('email.xml', 'a+');
+  fwrite ($fp, $xml);
+  fclose ($fp);
 ?>

@@ -101,9 +101,6 @@
         </div>
       </div>
 
-      <div id="Copyright">
-          <p>Designed by Valeria De Souza Teixeira | Copyright &copy; 2018</p>
-      </div>
     </div>
 
   </footer>
